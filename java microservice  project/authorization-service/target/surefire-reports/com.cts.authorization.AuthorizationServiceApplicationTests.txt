@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: com.cts.authorization.AuthorizationServiceApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 11.736 s <<< FAILURE! - in com.cts.authorization.AuthorizationServiceApplicationTests
+contextLoads  Time elapsed: 0.029 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userRequest' defined in file [C:\Users\sfjbs\Downloads\tcsb2_2022-main (1)\tcsb2_2022-main\Pension_Management_System-main\authorization-service\target\classes\com\cts\authorization\model\UserRequest.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'java.lang.String' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.validation.constraints.NotBlank(message="Username cannot be empty", payload={}, groups={}), @javax.validation.constraints.Size(groups={}, min=4, message="Username length should be from 4 to 25 characters", payload={}, max=25)}
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'java.lang.String' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.validation.constraints.NotBlank(message="Username cannot be empty", payload={}, groups={}), @javax.validation.constraints.Size(groups={}, min=4, message="Username length should be from 4 to 25 characters", payload={}, max=25)}
+

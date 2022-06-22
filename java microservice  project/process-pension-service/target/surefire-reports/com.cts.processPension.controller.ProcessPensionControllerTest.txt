@@ -1,0 +1,54 @@
+-------------------------------------------------------------------------------
+Test set: com.cts.processPension.controller.ProcessPensionControllerTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 13.293 s <<< FAILURE! - in com.cts.processPension.controller.ProcessPensionControllerTest
+testProcessPension_withInvalidInput  Time elapsed: 0.142 s  <<< FAILURE!
+java.lang.AssertionError: 
+JSON path "$.processPensionStatusCode"
+Expected: <21>
+     but: was <0>
+	at com.cts.processPension.controller.ProcessPensionControllerTest.testProcessPension_withInvalidInput(ProcessPensionControllerTest.java:135)
+
+testGetPensionDetails_withInvalidToken  Time elapsed: 0.063 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<403> but was:<400>
+	at com.cts.processPension.controller.ProcessPensionControllerTest.testGetPensionDetails_withInvalidToken(ProcessPensionControllerTest.java:191)
+
+testDisbursePension_withValidFeignResponse  Time elapsed: 0.091 s  <<< FAILURE!
+java.lang.AssertionError: 
+JSON path "$.message"
+Expected: "Internal Server Error"
+     but: was "Invalid Credentials"
+	at com.cts.processPension.controller.ProcessPensionControllerTest.testDisbursePension_withValidFeignResponse(ProcessPensionControllerTest.java:239)
+
+testProcessPension_withValidInput  Time elapsed: 0.039 s  <<< FAILURE!
+java.lang.AssertionError: 
+JSON path "$.processPensionStatusCode"
+Expected: <10>
+     but: was <0>
+	at com.cts.processPension.controller.ProcessPensionControllerTest.testProcessPension_withValidInput(ProcessPensionControllerTest.java:117)
+
+testPensionInput_withInvalidFeignResponse  Time elapsed: 0.327 s  <<< FAILURE!
+java.lang.AssertionError: 
+JSON path "$.message"
+Expected: "Unknown error response"
+     but: was "Invalid Credentials"
+	at com.cts.processPension.controller.ProcessPensionControllerTest.testPensionInput_withInvalidFeignResponse(ProcessPensionControllerTest.java:255)
+
+testGetPensionDetails_withValidInput  Time elapsed: 0.032 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<400>
+	at com.cts.processPension.controller.ProcessPensionControllerTest.testGetPensionDetails_withValidInput(ProcessPensionControllerTest.java:178)
+
+testPensionInput_withEmptyFeignResponse  Time elapsed: 0.091 s  <<< FAILURE!
+java.lang.AssertionError: 
+JSON path "$.message"
+Expected: "Invalid Request"
+     but: was "Invalid Credentials"
+	at com.cts.processPension.controller.ProcessPensionControllerTest.testPensionInput_withEmptyFeignResponse(ProcessPensionControllerTest.java:270)
+
+testPensionInput_withInvalidInput  Time elapsed: 0.046 s  <<< FAILURE!
+java.lang.AssertionError: 
+JSON path "$.message"
+Expected: "Details entered are incorrect"
+     but: was "Invalid Credentials"
+	at com.cts.processPension.controller.ProcessPensionControllerTest.testPensionInput_withInvalidInput(ProcessPensionControllerTest.java:221)
+

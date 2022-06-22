@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.processPension.service.ProcessPensionServiceImplTest" time="3.591" tests="11" errors="6" skipped="0" failures="3">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\sfjbs\Downloads\tcsb2_2022-main (1)\tcsb2_2022-main\Pension_Management_System-main\process-pension-service\target\test-classes;C:\Users\sfjbs\Downloads\tcsb2_2022-main (1)\tcsb2_2022-main\Pension_Management_System-main\process-pension-service\target\classes;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.4.8\spring-boot-starter-data-jpa-2.4.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.4.8\spring-boot-starter-aop-2.4.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\spring-aop\5.3.8\spring-aop-5.3.8.jar;C:\Users\sfjbs\.m2\repository\org\aspectj\aspectjweaver\1.9.6\aspectjweaver-1.9.6.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.4.8\spring-boot-starter-jdbc-2.4.8.jar;C:\Users\sfjbs\.m2\repository\com\zaxxer\HikariCP\3.4.5\HikariCP-3.4.5.jar;C:\Users\sfjbs\.m2\repository\org\springframework\spring-jdbc\5.3.8\spring-jdbc-5.3.8.jar;C:\Users\sfjbs\.m2\repository\jakarta\transaction\jakarta.transaction-api\1.3.3\jakarta.transaction-api-1.3.3.jar;C:\Users\sfjbs\.m2\repository\jakarta\persistence\jakarta.persistence-api\2.2.3\jakarta.persistence-api-2.2.3.jar;C:\Users\sfjbs\.m2\repository\org\hibernate\hibernate-core\5.4.32.Final\hibernate-core-5.4.32.Final.jar;C:\Users\sfjbs\.m2\repository\org\jboss\logging\jboss-logging\3.4.2.Final\jboss-logging-3.4.2.Final.jar;C:\Users\sfjbs\.m2\repository\org\javassist\javassist\3.27.0-GA\javassist-3.27.0-GA.jar;C:\Users\sfjbs\.m2\repository\net\bytebuddy\byte-buddy\1.10.22\byte-buddy-1.10.22.jar;C:\Users\sfjbs\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\sfjbs\.m2\repository\org\jboss\jandex\2.2.3.Final\jandex-2.2.3.Final.jar;C:\Users\sfjbs\.m2\repository\org\dom4j\dom4j\2.1.3\dom4j-2.1.3.jar;C:\Users\sfjbs\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\sfjbs\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.4\jaxb-runtime-2.3.4.jar;C:\Users\sfjbs\.m2\repository\org\glassfish\jaxb\txw2\2.3.4\txw2-2.3.4.jar;C:\Users\sfjbs\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.12\istack-commons-runtime-3.0.12.jar;C:\Users\sfjbs\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\sfjbs\.m2\repository\org\springframework\data\spring-data-jpa\2.4.10\spring-data-jpa-2.4.10.jar;C:\Users\sfjbs\.m2\repository\org\springframework\data\spring-data-commons\2.4.10\spring-data-commons-2.4.10.jar;C:\Users\sfjbs\.m2\repository\org\springframework\spring-orm\5.3.8\spring-orm-5.3.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\spring-context\5.3.8\spring-context-5.3.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\spring-tx\5.3.8\spring-tx-5.3.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\spring-beans\5.3.8\spring-beans-5.3.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\spring-aspects\5.3.8\spring-aspects-5.3.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.4.8\spring-boot-starter-web-2.4.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-starter\2.4.8\spring-boot-starter-2.4.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.4.8\spring-boot-starter-logging-2.4.8.jar;C:\Users\sfjbs\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\sfjbs\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\sfjbs\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.13.3\log4j-to-slf4j-2.13.3.jar;C:\Users\sfjbs\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar;C:\Users\sfjbs\.m2\repository\org\slf4j\jul-to-slf4j\1.7.31\jul-to-slf4j-1.7.31.jar;C:\Users\sfjbs\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\sfjbs\.m2\repository\org\yaml\snakeyaml\1.27\snakeyaml-1.27.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.4.8\spring-boot-starter-json-2.4.8.jar;C:\Users\sfjbs\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.11.4\jackson-datatype-jdk8-2.11.4.jar;C:\Users\sfjbs\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.11.4\jackson-module-parameter-names-2.11.4.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.4.8\spring-boot-starter-tomcat-2.4.8.jar;C:\Users\sfjbs\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.48\tomcat-embed-core-9.0.48.jar;C:\Users\sfjbs\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.48\tomcat-embed-websocket-9.0.48.jar;C:\Users\sfjbs\.m2\repository\org\springframework\spring-web\5.3.8\spring-web-5.3.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\spring-webmvc\5.3.8\spring-webmvc-5.3.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\spring-expression\5.3.8\spring-expression-5.3.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-starter-validation\2.4.8\spring-boot-starter-validation-2.4.8.jar;C:\Users\sfjbs\.m2\repository\org\glassfish\jakarta.el\3.0.3\jakarta.el-3.0.3.jar;C:\Users\sfjbs\.m2\repository\org\hibernate\validator\hibernate-validator\6.1.7.Final\hibernate-validator-6.1.7.Final.jar;C:\Users\sfjbs\.m2\repository\jakarta\validation\jakarta.validation-api\2.0.2\jakarta.validation-api-2.0.2.jar;C:\Users\sfjbs\.m2\repository\javax\validation\validation-api\2.0.1.Final\validation-api-2.0.1.Final.jar;C:\Users\sfjbs\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.11.4\jackson-datatype-jsr310-2.11.4.jar;C:\Users\sfjbs\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.11.4\jackson-annotations-2.11.4.jar;C:\Users\sfjbs\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.11.4\jackson-core-2.11.4.jar;C:\Users\sfjbs\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.11.4\jackson-databind-2.11.4.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-devtools\2.4.8\spring-boot-devtools-2.4.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot\2.4.8\spring-boot-2.4.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.4.8\spring-boot-autoconfigure-2.4.8.jar;C:\Users\sfjbs\.m2\repository\com\h2database\h2\1.4.200\h2-1.4.200.jar;C:\Users\sfjbs\.m2\repository\org\projectlombok\lombok\1.18.20\lombok-1.18.20.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.4.8\spring-boot-starter-test-2.4.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-test\2.4.8\spring-boot-test-2.4.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.4.8\spring-boot-test-autoconfigure-2.4.8.jar;C:\Users\sfjbs\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\Users\sfjbs\.m2\repository\net\minidev\json-smart\2.3.1\json-smart-2.3.1.jar;C:\Users\sfjbs\.m2\repository\net\minidev\accessors-smart\2.3.1\accessors-smart-2.3.1.jar;C:\Users\sfjbs\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\sfjbs\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\sfjbs\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\sfjbs\.m2\repository\org\assertj\assertj-core\3.18.1\assertj-core-3.18.1.jar;C:\Users\sfjbs\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\sfjbs\.m2\repository\org\junit\jupiter\junit-jupiter\5.7.2\junit-jupiter-5.7.2.jar;C:\Users\sfjbs\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\sfjbs\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\sfjbs\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\sfjbs\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\sfjbs\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.2\junit-jupiter-params-5.7.2.jar;C:\Users\sfjbs\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\sfjbs\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;C:\Users\sfjbs\.m2\repository\org\mockito\mockito-core\3.6.28\mockito-core-3.6.28.jar;C:\Users\sfjbs\.m2\repository\net\bytebuddy\byte-buddy-agent\1.10.22\byte-buddy-agent-1.10.22.jar;C:\Users\sfjbs\.m2\repository\org\objenesis\objenesis\3.1\objenesis-3.1.jar;C:\Users\sfjbs\.m2\repository\org\mockito\mockito-junit-jupiter\3.6.28\mockito-junit-jupiter-3.6.28.jar;C:\Users\sfjbs\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\sfjbs\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\sfjbs\.m2\repository\org\springframework\spring-core\5.3.8\spring-core-5.3.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\spring-jcl\5.3.8\spring-jcl-5.3.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\spring-test\5.3.8\spring-test-5.3.8.jar;C:\Users\sfjbs\.m2\repository\org\xmlunit\xmlunit-core\2.7.0\xmlunit-core-2.7.0.jar;C:\Users\sfjbs\.m2\repository\org\springframework\cloud\spring-cloud-starter-openfeign\3.0.0\spring-cloud-starter-openfeign-3.0.0.jar;C:\Users\sfjbs\.m2\repository\org\springframework\cloud\spring-cloud-starter\3.0.0\spring-cloud-starter-3.0.0.jar;C:\Users\sfjbs\.m2\repository\org\springframework\cloud\spring-cloud-context\3.0.0\spring-cloud-context-3.0.0.jar;C:\Users\sfjbs\.m2\repository\org\springframework\security\spring-security-rsa\1.0.9.RELEASE\spring-security-rsa-1.0.9.RELEASE.jar;C:\Users\sfjbs\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\sfjbs\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\sfjbs\.m2\repository\org\springframework\cloud\spring-cloud-openfeign-core\3.0.0\spring-cloud-openfeign-core-3.0.0.jar;C:\Users\sfjbs\.m2\repository\io\github\openfeign\form\feign-form-spring\3.8.0\feign-form-spring-3.8.0.jar;C:\Users\sfjbs\.m2\repository\io\github\openfeign\form\feign-form\3.8.0\feign-form-3.8.0.jar;C:\Users\sfjbs\.m2\repository\commons-fileupload\commons-fileupload\1.4\commons-fileupload-1.4.jar;C:\Users\sfjbs\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar;C:\Users\sfjbs\.m2\repository\org\springframework\cloud\spring-cloud-commons\3.0.0\spring-cloud-commons-3.0.0.jar;C:\Users\sfjbs\.m2\repository\org\springframework\security\spring-security-crypto\5.4.7\spring-security-crypto-5.4.7.jar;C:\Users\sfjbs\.m2\repository\io\github\openfeign\feign-core\10.10.1\feign-core-10.10.1.jar;C:\Users\sfjbs\.m2\repository\io\github\openfeign\feign-slf4j\10.10.1\feign-slf4j-10.10.1.jar;C:\Users\sfjbs\.m2\repository\io\springfox\springfox-swagger2\2.9.2\springfox-swagger2-2.9.2.jar;C:\Users\sfjbs\.m2\repository\io\swagger\swagger-annotations\1.5.20\swagger-annotations-1.5.20.jar;C:\Users\sfjbs\.m2\repository\io\swagger\swagger-models\1.5.20\swagger-models-1.5.20.jar;C:\Users\sfjbs\.m2\repository\io\springfox\springfox-spi\2.9.2\springfox-spi-2.9.2.jar;C:\Users\sfjbs\.m2\repository\io\springfox\springfox-core\2.9.2\springfox-core-2.9.2.jar;C:\Users\sfjbs\.m2\repository\io\springfox\springfox-schema\2.9.2\springfox-schema-2.9.2.jar;C:\Users\sfjbs\.m2\repository\io\springfox\springfox-swagger-common\2.9.2\springfox-swagger-common-2.9.2.jar;C:\Users\sfjbs\.m2\repository\io\springfox\springfox-spring-web\2.9.2\springfox-spring-web-2.9.2.jar;C:\Users\sfjbs\.m2\repository\com\google\guava\guava\20.0\guava-20.0.jar;C:\Users\sfjbs\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\sfjbs\.m2\repository\org\slf4j\slf4j-api\1.7.31\slf4j-api-1.7.31.jar;C:\Users\sfjbs\.m2\repository\org\springframework\plugin\spring-plugin-core\1.2.0.RELEASE\spring-plugin-core-1.2.0.RELEASE.jar;C:\Users\sfjbs\.m2\repository\org\springframework\plugin\spring-plugin-metadata\1.2.0.RELEASE\spring-plugin-metadata-1.2.0.RELEASE.jar;C:\Users\sfjbs\.m2\repository\org\mapstruct\mapstruct\1.2.0.Final\mapstruct-1.2.0.Final.jar;C:\Users\sfjbs\.m2\repository\io\springfox\springfox-swagger-ui\2.9.2\springfox-swagger-ui-2.9.2.jar;C:\Users\sfjbs\.m2\repository\org\springframework\cloud\spring-cloud-starter-netflix-eureka-client\3.0.0\spring-cloud-starter-netflix-eureka-client-3.0.0.jar;C:\Users\sfjbs\.m2\repository\org\springframework\cloud\spring-cloud-netflix-eureka-client\3.0.0\spring-cloud-netflix-eureka-client-3.0.0.jar;C:\Users\sfjbs\.m2\repository\com\netflix\eureka\eureka-client\1.10.10\eureka-client-1.10.10.jar;C:\Users\sfjbs\.m2\repository\com\netflix\netflix-commons\netflix-eventbus\0.3.0\netflix-eventbus-0.3.0.jar;C:\Users\sfjbs\.m2\repository\com\netflix\netflix-commons\netflix-infix\0.3.0\netflix-infix-0.3.0.jar;C:\Users\sfjbs\.m2\repository\commons-jxpath\commons-jxpath\1.3\commons-jxpath-1.3.jar;C:\Users\sfjbs\.m2\repository\joda-time\joda-time\2.3\joda-time-2.3.jar;C:\Users\sfjbs\.m2\repository\org\antlr\antlr-runtime\3.4\antlr-runtime-3.4.jar;C:\Users\sfjbs\.m2\repository\org\antlr\stringtemplate\3.2.1\stringtemplate-3.2.1.jar;C:\Users\sfjbs\.m2\repository\com\google\code\gson\gson\2.8.7\gson-2.8.7.jar;C:\Users\sfjbs\.m2\repository\org\apache\commons\commons-math\2.2\commons-math-2.2.jar;C:\Users\sfjbs\.m2\repository\javax\ws\rs\jsr311-api\1.1.1\jsr311-api-1.1.1.jar;C:\Users\sfjbs\.m2\repository\com\netflix\servo\servo-core\0.12.21\servo-core-0.12.21.jar;C:\Users\sfjbs\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\sfjbs\.m2\repository\org\apache\httpcomponents\httpcore\4.4.14\httpcore-4.4.14.jar;C:\Users\sfjbs\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\sfjbs\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\sfjbs\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\sfjbs\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0.jar;C:\Users\sfjbs\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\sfjbs\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\sfjbs\.m2\repository\org\codehaus\jettison\jettison\1.4.0\jettison-1.4.0.jar;C:\Users\sfjbs\.m2\repository\com\netflix\eureka\eureka-core\1.10.10\eureka-core-1.10.10.jar;C:\Users\sfjbs\.m2\repository\com\fasterxml\woodstox\woodstox-core\5.3.0\woodstox-core-5.3.0.jar;C:\Users\sfjbs\.m2\repository\org\codehaus\woodstox\stax2-api\4.2\stax2-api-4.2.jar;C:\Users\sfjbs\.m2\repository\org\springframework\cloud\spring-cloud-starter-loadbalancer\3.0.0\spring-cloud-starter-loadbalancer-3.0.0.jar;C:\Users\sfjbs\.m2\repository\org\springframework\cloud\spring-cloud-loadbalancer\3.0.0\spring-cloud-loadbalancer-3.0.0.jar;C:\Users\sfjbs\.m2\repository\io\projectreactor\reactor-core\3.4.7\reactor-core-3.4.7.jar;C:\Users\sfjbs\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\sfjbs\.m2\repository\io\projectreactor\addons\reactor-extra\3.4.3\reactor-extra-3.4.3.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-starter-cache\2.4.8\spring-boot-starter-cache-2.4.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\spring-context-support\5.3.8\spring-context-support-5.3.8.jar;C:\Users\sfjbs\.m2\repository\com\stoyanr\evictor\1.0.0\evictor-1.0.0.jar;C:\Users\sfjbs\.m2\repository\com\thoughtworks\xstream\xstream\1.4.14\xstream-1.4.14.jar;C:\Users\sfjbs\.m2\repository\xmlpull\xmlpull\1.1.3.1\xmlpull-1.1.3.1.jar;C:\Users\sfjbs\.m2\repository\xpp3\xpp3_min\1.1.4c\xpp3_min-1.1.4c.jar;C:\Users\sfjbs\.m2\repository\org\springframework\security\spring-security-test\5.4.7\spring-security-test-5.4.7.jar;C:\Users\sfjbs\.m2\repository\org\springframework\security\spring-security-core\5.4.7\spring-security-core-5.4.7.jar;C:\Users\sfjbs\.m2\repository\org\springframework\security\spring-security-web\5.4.7\spring-security-web-5.4.7.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Etc/UTC"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Users\sfjbs\Downloads\sts-4.14.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\sfjbs\AppData\Local\Temp\surefire4321135481460282308\surefirebooter8180204530987547254.jar C:\Users\sfjbs\AppData\Local\Temp\surefire4321135481460282308 2022-06-17T11-53-40_034-jvmRun1 surefire9380122603402600229tmp surefire_011652374583171618480tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\sfjbs\Downloads\tcsb2_2022-main (1)\tcsb2_2022-main\Pension_Management_System-main\process-pension-service\target\test-classes;C:\Users\sfjbs\Downloads\tcsb2_2022-main (1)\tcsb2_2022-main\Pension_Management_System-main\process-pension-service\target\classes;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.4.8\spring-boot-starter-data-jpa-2.4.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.4.8\spring-boot-starter-aop-2.4.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\spring-aop\5.3.8\spring-aop-5.3.8.jar;C:\Users\sfjbs\.m2\repository\org\aspectj\aspectjweaver\1.9.6\aspectjweaver-1.9.6.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.4.8\spring-boot-starter-jdbc-2.4.8.jar;C:\Users\sfjbs\.m2\repository\com\zaxxer\HikariCP\3.4.5\HikariCP-3.4.5.jar;C:\Users\sfjbs\.m2\repository\org\springframework\spring-jdbc\5.3.8\spring-jdbc-5.3.8.jar;C:\Users\sfjbs\.m2\repository\jakarta\transaction\jakarta.transaction-api\1.3.3\jakarta.transaction-api-1.3.3.jar;C:\Users\sfjbs\.m2\repository\jakarta\persistence\jakarta.persistence-api\2.2.3\jakarta.persistence-api-2.2.3.jar;C:\Users\sfjbs\.m2\repository\org\hibernate\hibernate-core\5.4.32.Final\hibernate-core-5.4.32.Final.jar;C:\Users\sfjbs\.m2\repository\org\jboss\logging\jboss-logging\3.4.2.Final\jboss-logging-3.4.2.Final.jar;C:\Users\sfjbs\.m2\repository\org\javassist\javassist\3.27.0-GA\javassist-3.27.0-GA.jar;C:\Users\sfjbs\.m2\repository\net\bytebuddy\byte-buddy\1.10.22\byte-buddy-1.10.22.jar;C:\Users\sfjbs\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\sfjbs\.m2\repository\org\jboss\jandex\2.2.3.Final\jandex-2.2.3.Final.jar;C:\Users\sfjbs\.m2\repository\org\dom4j\dom4j\2.1.3\dom4j-2.1.3.jar;C:\Users\sfjbs\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\sfjbs\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.4\jaxb-runtime-2.3.4.jar;C:\Users\sfjbs\.m2\repository\org\glassfish\jaxb\txw2\2.3.4\txw2-2.3.4.jar;C:\Users\sfjbs\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.12\istack-commons-runtime-3.0.12.jar;C:\Users\sfjbs\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\sfjbs\.m2\repository\org\springframework\data\spring-data-jpa\2.4.10\spring-data-jpa-2.4.10.jar;C:\Users\sfjbs\.m2\repository\org\springframework\data\spring-data-commons\2.4.10\spring-data-commons-2.4.10.jar;C:\Users\sfjbs\.m2\repository\org\springframework\spring-orm\5.3.8\spring-orm-5.3.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\spring-context\5.3.8\spring-context-5.3.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\spring-tx\5.3.8\spring-tx-5.3.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\spring-beans\5.3.8\spring-beans-5.3.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\spring-aspects\5.3.8\spring-aspects-5.3.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.4.8\spring-boot-starter-web-2.4.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-starter\2.4.8\spring-boot-starter-2.4.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.4.8\spring-boot-starter-logging-2.4.8.jar;C:\Users\sfjbs\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\sfjbs\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\sfjbs\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.13.3\log4j-to-slf4j-2.13.3.jar;C:\Users\sfjbs\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar;C:\Users\sfjbs\.m2\repository\org\slf4j\jul-to-slf4j\1.7.31\jul-to-slf4j-1.7.31.jar;C:\Users\sfjbs\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\sfjbs\.m2\repository\org\yaml\snakeyaml\1.27\snakeyaml-1.27.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.4.8\spring-boot-starter-json-2.4.8.jar;C:\Users\sfjbs\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.11.4\jackson-datatype-jdk8-2.11.4.jar;C:\Users\sfjbs\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.11.4\jackson-module-parameter-names-2.11.4.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.4.8\spring-boot-starter-tomcat-2.4.8.jar;C:\Users\sfjbs\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.48\tomcat-embed-core-9.0.48.jar;C:\Users\sfjbs\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.48\tomcat-embed-websocket-9.0.48.jar;C:\Users\sfjbs\.m2\repository\org\springframework\spring-web\5.3.8\spring-web-5.3.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\spring-webmvc\5.3.8\spring-webmvc-5.3.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\spring-expression\5.3.8\spring-expression-5.3.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-starter-validation\2.4.8\spring-boot-starter-validation-2.4.8.jar;C:\Users\sfjbs\.m2\repository\org\glassfish\jakarta.el\3.0.3\jakarta.el-3.0.3.jar;C:\Users\sfjbs\.m2\repository\org\hibernate\validator\hibernate-validator\6.1.7.Final\hibernate-validator-6.1.7.Final.jar;C:\Users\sfjbs\.m2\repository\jakarta\validation\jakarta.validation-api\2.0.2\jakarta.validation-api-2.0.2.jar;C:\Users\sfjbs\.m2\repository\javax\validation\validation-api\2.0.1.Final\validation-api-2.0.1.Final.jar;C:\Users\sfjbs\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.11.4\jackson-datatype-jsr310-2.11.4.jar;C:\Users\sfjbs\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.11.4\jackson-annotations-2.11.4.jar;C:\Users\sfjbs\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.11.4\jackson-core-2.11.4.jar;C:\Users\sfjbs\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.11.4\jackson-databind-2.11.4.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-devtools\2.4.8\spring-boot-devtools-2.4.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot\2.4.8\spring-boot-2.4.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.4.8\spring-boot-autoconfigure-2.4.8.jar;C:\Users\sfjbs\.m2\repository\com\h2database\h2\1.4.200\h2-1.4.200.jar;C:\Users\sfjbs\.m2\repository\org\projectlombok\lombok\1.18.20\lombok-1.18.20.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.4.8\spring-boot-starter-test-2.4.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-test\2.4.8\spring-boot-test-2.4.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.4.8\spring-boot-test-autoconfigure-2.4.8.jar;C:\Users\sfjbs\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\Users\sfjbs\.m2\repository\net\minidev\json-smart\2.3.1\json-smart-2.3.1.jar;C:\Users\sfjbs\.m2\repository\net\minidev\accessors-smart\2.3.1\accessors-smart-2.3.1.jar;C:\Users\sfjbs\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\sfjbs\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\sfjbs\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\sfjbs\.m2\repository\org\assertj\assertj-core\3.18.1\assertj-core-3.18.1.jar;C:\Users\sfjbs\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\sfjbs\.m2\repository\org\junit\jupiter\junit-jupiter\5.7.2\junit-jupiter-5.7.2.jar;C:\Users\sfjbs\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\sfjbs\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\sfjbs\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\sfjbs\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\sfjbs\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.2\junit-jupiter-params-5.7.2.jar;C:\Users\sfjbs\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\sfjbs\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;C:\Users\sfjbs\.m2\repository\org\mockito\mockito-core\3.6.28\mockito-core-3.6.28.jar;C:\Users\sfjbs\.m2\repository\net\bytebuddy\byte-buddy-agent\1.10.22\byte-buddy-agent-1.10.22.jar;C:\Users\sfjbs\.m2\repository\org\objenesis\objenesis\3.1\objenesis-3.1.jar;C:\Users\sfjbs\.m2\repository\org\mockito\mockito-junit-jupiter\3.6.28\mockito-junit-jupiter-3.6.28.jar;C:\Users\sfjbs\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\sfjbs\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\sfjbs\.m2\repository\org\springframework\spring-core\5.3.8\spring-core-5.3.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\spring-jcl\5.3.8\spring-jcl-5.3.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\spring-test\5.3.8\spring-test-5.3.8.jar;C:\Users\sfjbs\.m2\repository\org\xmlunit\xmlunit-core\2.7.0\xmlunit-core-2.7.0.jar;C:\Users\sfjbs\.m2\repository\org\springframework\cloud\spring-cloud-starter-openfeign\3.0.0\spring-cloud-starter-openfeign-3.0.0.jar;C:\Users\sfjbs\.m2\repository\org\springframework\cloud\spring-cloud-starter\3.0.0\spring-cloud-starter-3.0.0.jar;C:\Users\sfjbs\.m2\repository\org\springframework\cloud\spring-cloud-context\3.0.0\spring-cloud-context-3.0.0.jar;C:\Users\sfjbs\.m2\repository\org\springframework\security\spring-security-rsa\1.0.9.RELEASE\spring-security-rsa-1.0.9.RELEASE.jar;C:\Users\sfjbs\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\sfjbs\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\sfjbs\.m2\repository\org\springframework\cloud\spring-cloud-openfeign-core\3.0.0\spring-cloud-openfeign-core-3.0.0.jar;C:\Users\sfjbs\.m2\repository\io\github\openfeign\form\feign-form-spring\3.8.0\feign-form-spring-3.8.0.jar;C:\Users\sfjbs\.m2\repository\io\github\openfeign\form\feign-form\3.8.0\feign-form-3.8.0.jar;C:\Users\sfjbs\.m2\repository\commons-fileupload\commons-fileupload\1.4\commons-fileupload-1.4.jar;C:\Users\sfjbs\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar;C:\Users\sfjbs\.m2\repository\org\springframework\cloud\spring-cloud-commons\3.0.0\spring-cloud-commons-3.0.0.jar;C:\Users\sfjbs\.m2\repository\org\springframework\security\spring-security-crypto\5.4.7\spring-security-crypto-5.4.7.jar;C:\Users\sfjbs\.m2\repository\io\github\openfeign\feign-core\10.10.1\feign-core-10.10.1.jar;C:\Users\sfjbs\.m2\repository\io\github\openfeign\feign-slf4j\10.10.1\feign-slf4j-10.10.1.jar;C:\Users\sfjbs\.m2\repository\io\springfox\springfox-swagger2\2.9.2\springfox-swagger2-2.9.2.jar;C:\Users\sfjbs\.m2\repository\io\swagger\swagger-annotations\1.5.20\swagger-annotations-1.5.20.jar;C:\Users\sfjbs\.m2\repository\io\swagger\swagger-models\1.5.20\swagger-models-1.5.20.jar;C:\Users\sfjbs\.m2\repository\io\springfox\springfox-spi\2.9.2\springfox-spi-2.9.2.jar;C:\Users\sfjbs\.m2\repository\io\springfox\springfox-core\2.9.2\springfox-core-2.9.2.jar;C:\Users\sfjbs\.m2\repository\io\springfox\springfox-schema\2.9.2\springfox-schema-2.9.2.jar;C:\Users\sfjbs\.m2\repository\io\springfox\springfox-swagger-common\2.9.2\springfox-swagger-common-2.9.2.jar;C:\Users\sfjbs\.m2\repository\io\springfox\springfox-spring-web\2.9.2\springfox-spring-web-2.9.2.jar;C:\Users\sfjbs\.m2\repository\com\google\guava\guava\20.0\guava-20.0.jar;C:\Users\sfjbs\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\sfjbs\.m2\repository\org\slf4j\slf4j-api\1.7.31\slf4j-api-1.7.31.jar;C:\Users\sfjbs\.m2\repository\org\springframework\plugin\spring-plugin-core\1.2.0.RELEASE\spring-plugin-core-1.2.0.RELEASE.jar;C:\Users\sfjbs\.m2\repository\org\springframework\plugin\spring-plugin-metadata\1.2.0.RELEASE\spring-plugin-metadata-1.2.0.RELEASE.jar;C:\Users\sfjbs\.m2\repository\org\mapstruct\mapstruct\1.2.0.Final\mapstruct-1.2.0.Final.jar;C:\Users\sfjbs\.m2\repository\io\springfox\springfox-swagger-ui\2.9.2\springfox-swagger-ui-2.9.2.jar;C:\Users\sfjbs\.m2\repository\org\springframework\cloud\spring-cloud-starter-netflix-eureka-client\3.0.0\spring-cloud-starter-netflix-eureka-client-3.0.0.jar;C:\Users\sfjbs\.m2\repository\org\springframework\cloud\spring-cloud-netflix-eureka-client\3.0.0\spring-cloud-netflix-eureka-client-3.0.0.jar;C:\Users\sfjbs\.m2\repository\com\netflix\eureka\eureka-client\1.10.10\eureka-client-1.10.10.jar;C:\Users\sfjbs\.m2\repository\com\netflix\netflix-commons\netflix-eventbus\0.3.0\netflix-eventbus-0.3.0.jar;C:\Users\sfjbs\.m2\repository\com\netflix\netflix-commons\netflix-infix\0.3.0\netflix-infix-0.3.0.jar;C:\Users\sfjbs\.m2\repository\commons-jxpath\commons-jxpath\1.3\commons-jxpath-1.3.jar;C:\Users\sfjbs\.m2\repository\joda-time\joda-time\2.3\joda-time-2.3.jar;C:\Users\sfjbs\.m2\repository\org\antlr\antlr-runtime\3.4\antlr-runtime-3.4.jar;C:\Users\sfjbs\.m2\repository\org\antlr\stringtemplate\3.2.1\stringtemplate-3.2.1.jar;C:\Users\sfjbs\.m2\repository\com\google\code\gson\gson\2.8.7\gson-2.8.7.jar;C:\Users\sfjbs\.m2\repository\org\apache\commons\commons-math\2.2\commons-math-2.2.jar;C:\Users\sfjbs\.m2\repository\javax\ws\rs\jsr311-api\1.1.1\jsr311-api-1.1.1.jar;C:\Users\sfjbs\.m2\repository\com\netflix\servo\servo-core\0.12.21\servo-core-0.12.21.jar;C:\Users\sfjbs\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\sfjbs\.m2\repository\org\apache\httpcomponents\httpcore\4.4.14\httpcore-4.4.14.jar;C:\Users\sfjbs\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\sfjbs\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\sfjbs\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\sfjbs\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0.jar;C:\Users\sfjbs\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\sfjbs\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\sfjbs\.m2\repository\org\codehaus\jettison\jettison\1.4.0\jettison-1.4.0.jar;C:\Users\sfjbs\.m2\repository\com\netflix\eureka\eureka-core\1.10.10\eureka-core-1.10.10.jar;C:\Users\sfjbs\.m2\repository\com\fasterxml\woodstox\woodstox-core\5.3.0\woodstox-core-5.3.0.jar;C:\Users\sfjbs\.m2\repository\org\codehaus\woodstox\stax2-api\4.2\stax2-api-4.2.jar;C:\Users\sfjbs\.m2\repository\org\springframework\cloud\spring-cloud-starter-loadbalancer\3.0.0\spring-cloud-starter-loadbalancer-3.0.0.jar;C:\Users\sfjbs\.m2\repository\org\springframework\cloud\spring-cloud-loadbalancer\3.0.0\spring-cloud-loadbalancer-3.0.0.jar;C:\Users\sfjbs\.m2\repository\io\projectreactor\reactor-core\3.4.7\reactor-core-3.4.7.jar;C:\Users\sfjbs\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\sfjbs\.m2\repository\io\projectreactor\addons\reactor-extra\3.4.3\reactor-extra-3.4.3.jar;C:\Users\sfjbs\.m2\repository\org\springframework\boot\spring-boot-starter-cache\2.4.8\spring-boot-starter-cache-2.4.8.jar;C:\Users\sfjbs\.m2\repository\org\springframework\spring-context-support\5.3.8\spring-context-support-5.3.8.jar;C:\Users\sfjbs\.m2\repository\com\stoyanr\evictor\1.0.0\evictor-1.0.0.jar;C:\Users\sfjbs\.m2\repository\com\thoughtworks\xstream\xstream\1.4.14\xstream-1.4.14.jar;C:\Users\sfjbs\.m2\repository\xmlpull\xmlpull\1.1.3.1\xmlpull-1.1.3.1.jar;C:\Users\sfjbs\.m2\repository\xpp3\xpp3_min\1.1.4c\xpp3_min-1.1.4c.jar;C:\Users\sfjbs\.m2\repository\org\springframework\security\spring-security-test\5.4.7\spring-security-test-5.4.7.jar;C:\Users\sfjbs\.m2\repository\org\springframework\security\spring-security-core\5.4.7\spring-security-core-5.4.7.jar;C:\Users\sfjbs\.m2\repository\org\springframework\security\spring-security-web\5.4.7\spring-security-web-5.4.7.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\sfjbs"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-01-18"/>
+    <property name="java.home" value="C:\Users\sfjbs\Downloads\sts-4.14.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="style.color" value="always"/>
+    <property name="basedir" value="C:\Users\sfjbs\Downloads\tcsb2_2022-main (1)\tcsb2_2022-main\Pension_Management_System-main\process-pension-service"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\sfjbs\AppData\Local\Temp\surefire4321135481460282308\surefirebooter8180204530987547254.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.2+8"/>
+    <property name="user.name" value="sfjbs"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.2+8"/>
+    <property name="localRepository" value="C:\Users\sfjbs\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\sfjbs\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.2"/>
+    <property name="user.dir" value="C:\Users\sfjbs\Downloads\tcsb2_2022-main (1)\tcsb2_2022-main\Pension_Management_System-main\process-pension-service"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\sfjbs\Downloads\sts-4.14.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/sfjbs/Downloads/sts-4.14.1.RELEASE//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208/jre/bin/server;C:/Users/sfjbs/Downloads/sts-4.14.1.RELEASE//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\sfjbs\Downloads\javamicro-20220615T125730Z-001\javamicro\apache-maven-3.8.5-bin\apache-maven-3.8.5\bin;C:\Users\sfjbs\Downloads\javamicro-20220615T125730Z-001\javamicro\apache-maven-3.8.5-bin\apache-maven-3.8.5\lib;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Git\cmd;C:\Users\sfjbs\AppData\Local\Microsoft\WindowsApps;C:\Users\sfjbs\Downloads\javamicro-20220615T125730Z-001\javamicro\apache-maven-3.8.5-bin\apache-maven-3.8.5\bin;C:\Users\sfjbs\Downloads\javamicro-20220615T125730Z-001\javamicro\apache-maven-3.8.5-bin\apache-maven-3.8.5\lib;;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.3\bin;;C:\Users\sfjbs\Downloads\sts-4.14.1.RELEASE;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.2+8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testGetPensionDetails_forSelf" classname="com.processPension.service.ProcessPensionServiceImplTest" time="0.059">
+    <error message="Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;com.processPension.model.PensionerInput.getName()&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.processPension.model.PensionerInput.getName()" is null
+	at com.processPension.service.ProcessPensionServiceImplTest.testGetPensionDetails_forSelf(ProcessPensionServiceImplTest.java:169)
+</error>
+    <system-out><![CDATA[2022-06-17 11:54:08.243  INFO 4412 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.processPension.service.ProcessPensionServiceImplTest], using SpringBootContextLoader
+2022-06-17 11:54:08.245  INFO 4412 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.processPension.service.ProcessPensionServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-06-17 11:54:08.245  INFO 4412 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.processPension.service.ProcessPensionServiceImplTest]: ProcessPensionServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-06-17 11:54:08.255  INFO 4412 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.processPension.ProcessPensionServiceApplication for test class com.processPension.service.ProcessPensionServiceImplTest
+2022-06-17 11:54:08.257  INFO 4412 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+2022-06-17 11:54:08.257  INFO 4412 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@460306ab, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3cc5b3d3, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7ee0af8c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@66041d36, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@386c6903, org.springframework.test.context.support.DirtiesContextTestExecutionListener@29260ef6, org.springframework.test.context.transaction.TransactionalTestExecutionListener@52c14891, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@14ea1252, org.springframework.test.context.event.EventPublishingTestExecutionListener@4f1545bd, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@56ddb317, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@e80fc9d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4abc179d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2fe19bda, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@141fc03a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1df2b230, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@37d85eec, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@14443c86]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.8)
+
+2022-06-17 11:54:08.568  INFO 4412 --- [           main] c.p.s.ProcessPensionServiceImplTest      : Starting ProcessPensionServiceImplTest using Java 17.0.2 on jm12 with PID 4412 (started by sfjbs in C:\Users\sfjbs\Downloads\tcsb2_2022-main (1)\tcsb2_2022-main\Pension_Management_System-main\process-pension-service)
+2022-06-17 11:54:08.569  INFO 4412 --- [           main] c.p.s.ProcessPensionServiceImplTest      : No active profile set, falling back to default profiles: default
+2022-06-17 11:54:09.292  INFO 4412 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-17 11:54:09.319  INFO 4412 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces.
+2022-06-17 11:54:09.418  INFO 4412 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=58f7e278-4fb4-3c08-9397-bbb90c8d9934
+2022-06-17 11:54:09.564  INFO 4412 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.processPension.feign.AuthorisationClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-17 11:54:09.821  INFO 4412 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-17 11:54:09.853  INFO 4412 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-06-17 11:54:09.855  INFO 4412 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-06-17 11:54:09.856  INFO 4412 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Hibernate: drop table if exists pension_amount_detail CASCADE 
+Hibernate: drop table if exists pensioner_input CASCADE 
+Hibernate: create table pension_amount_detail (aadhaar_number varchar(255) not null, bank_service_charge double, final_amount double, pension_amount double, primary key (aadhaar_number))
+Hibernate: create table pensioner_input (aadhaar_number varchar(255) not null, date_of_birth timestamp, name varchar(255), pan varchar(255) not null, pension_type varchar(255), primary key (aadhaar_number))
+2022-06-17 11:54:09.959  INFO 4412 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-17 11:54:09.960  INFO 4412 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-17 11:54:10.324  WARN 4412 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-17 11:54:10.605  INFO 4412 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-06-17 11:54:11.406  INFO 4412 --- [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-06-17 11:54:11.562  WARN 4412 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2022-06-17 11:54:11.607  INFO 4412 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-06-17 11:54:11.617  INFO 4412 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-06-17 11:54:11.617  INFO 4412 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-17 11:54:11.623  INFO 4412 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-06-17 11:54:11.624  INFO 4412 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-06-17 11:54:11.624  INFO 4412 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-06-17 11:54:11.624  INFO 4412 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-06-17 11:54:11.624  INFO 4412 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-06-17 11:54:11.624  INFO 4412 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-06-17 11:54:11.625  INFO 4412 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-06-17 11:54:11.691  INFO 4412 --- [           main] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on GET request for "http://localhost:8761/eureka/apps/": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8761/eureka/apps/": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplications(RestTemplateEurekaHttpClient.java:135)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:441)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:283)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:279)
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:66)
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:290)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:374)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:381)
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:184)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:127)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:115)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:490)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$2c32ddfd_3.getEurekaClient(<generated>)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:54)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:771)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:763)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:350)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:355)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$7(ClassBasedTestDescriptor.java:350)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:349)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$4(ClassBasedTestDescriptor.java:270)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:269)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:259)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:258)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:101)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:100)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:65)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:111)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:111)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:498)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:603)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:246)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:351)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:373)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 135 more
+
+2022-06-17 11:54:11.691  WARN 4412 --- [           main] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2022-06-17 11:54:11.692  INFO 4412 --- [           main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROCESS-PENSION-SERVICE/host.docker.internal:PROCESS-PENSION-SERVICE:8082 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:441)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:283)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:279)
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:66)
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:290)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:374)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:381)
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:184)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:127)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:115)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:490)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$2c32ddfd_3.getEurekaClient(<generated>)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:54)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:771)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:763)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:350)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:355)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$7(ClassBasedTestDescriptor.java:350)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:349)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$4(ClassBasedTestDescriptor.java:270)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:269)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:259)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:258)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:101)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:100)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:65)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:111)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:111)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+2022-06-17 11:54:11.737  INFO 4412 --- [           main] com.netflix.discovery.DiscoveryClient    : Initial registry fetch from primary servers failed
+2022-06-17 11:54:11.738  WARN 4412 --- [           main] com.netflix.discovery.DiscoveryClient    : Using default backup registry implementation which does not do anything.
+2022-06-17 11:54:11.738  INFO 4412 --- [           main] com.netflix.discovery.DiscoveryClient    : Initial registry fetch from backup servers failed
+2022-06-17 11:54:11.740  INFO 4412 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-06-17 11:54:11.755  INFO 4412 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-06-17 11:54:11.758  INFO 4412 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1655466851758 with initial instances count: 0
+2022-06-17 11:54:11.764  INFO 4412 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PROCESS-PENSION-SERVICE with eureka with status UP
+2022-06-17 11:54:11.765  INFO 4412 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1655466851765, current=UP, previous=STARTING]
+2022-06-17 11:54:11.766  INFO 4412 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-06-17 11:54:11.767  INFO 4412 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-06-17 11:54:11.776  INFO 4412 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-06-17 11:54:11.877  INFO 4412 --- [           main] c.p.s.ProcessPensionServiceImplTest      : Started ProcessPensionServiceImplTest in 3.596 seconds (JVM running for 30.797)
+2022-06-17 11:54:11.900  INFO 4412 --- [           main] c.p.service.ProcessPensionServiceImpl    : Details found by details microservice
+]]></system-out>
+  </testcase>
+  <testcase name="testProcessPension_withInValidProcessResponse" classname="com.processPension.service.ProcessPensionServiceImplTest" time="0">
+    <failure message="expected: &lt;21&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <21> but was: <0>
+	at com.processPension.service.ProcessPensionServiceImplTest.testProcessPension_withInValidProcessResponse(ProcessPensionServiceImplTest.java:239)
+]]></failure>
+  </testcase>
+  <testcase name="testCheckDetailsForIncorrectPensionerInputForFamily" classname="com.processPension.service.ProcessPensionServiceImplTest" time="0.005">
+    <error message="Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;com.processPension.model.PensionerInput.getName()&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.processPension.model.PensionerInput.getName()" is null
+	at com.processPension.service.ProcessPensionServiceImplTest.testCheckDetailsForIncorrectPensionerInputForFamily(ProcessPensionServiceImplTest.java:98)
+</error>
+  </testcase>
+  <testcase name="testGettingPensionDetailByPassingPensionerDetalisForFamilyPensionType" classname="com.processPension.service.ProcessPensionServiceImplTest" time="0"/>
+  <testcase name="testGettingPensionDetailByPassingPensionerDetalisForSelfPensionType" classname="com.processPension.service.ProcessPensionServiceImplTest" time="0.007"/>
+  <testcase name="testCheckDetailsForIncorrectPensionerInputForSelf" classname="com.processPension.service.ProcessPensionServiceImplTest" time="0.006">
+    <error message="Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;com.processPension.model.PensionerInput.getName()&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.processPension.model.PensionerInput.getName()" is null
+	at com.processPension.service.ProcessPensionServiceImplTest.testCheckDetailsForIncorrectPensionerInputForSelf(ProcessPensionServiceImplTest.java:87)
+</error>
+  </testcase>
+  <testcase name="testCheckDetailsForCorrectPensionerInputForFamilyPensionType" classname="com.processPension.service.ProcessPensionServiceImplTest" time="0.009">
+    <error message="Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;com.processPension.model.PensionerInput.getName()&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.processPension.model.PensionerInput.getName()" is null
+	at com.processPension.service.ProcessPensionServiceImplTest.testCheckDetailsForCorrectPensionerInputForFamilyPensionType(ProcessPensionServiceImplTest.java:76)
+</error>
+  </testcase>
+  <testcase name="testCheckDetails_incorrectPensionerInput" classname="com.processPension.service.ProcessPensionServiceImplTest" time="0.031">
+    <failure message="Unexpected exception type thrown ==&gt; expected: &lt;com.processPensionexception.NotFoundException&gt; but was: &lt;java.lang.NullPointerException&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Unexpected exception type thrown ==> expected: <com.processPensionexception.NotFoundException> but was: <java.lang.NullPointerException>
+	at com.processPension.service.ProcessPensionServiceImplTest.testCheckDetails_incorrectPensionerInput(ProcessPensionServiceImplTest.java:195)
+Caused by: java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.processPension.model.PensionerInput.getName()" is null
+	at com.processPension.service.ProcessPensionServiceImplTest.lambda$testCheckDetails_incorrectPensionerInput$0(ProcessPensionServiceImplTest.java:196)
+	at com.processPension.service.ProcessPensionServiceImplTest.testCheckDetails_incorrectPensionerInput(ProcessPensionServiceImplTest.java:195)
+]]></failure>
+    <system-out><![CDATA[2022-06-17 11:54:11.991  INFO 4412 --- [           main] c.p.service.ProcessPensionServiceImpl    : Details found by details microservice
+]]></system-out>
+  </testcase>
+  <testcase name="testProcessPension_withValidProcessResponse" classname="com.processPension.service.ProcessPensionServiceImplTest" time="0.002">
+    <failure message="expected: &lt;10&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <10> but was: <0>
+	at com.processPension.service.ProcessPensionServiceImplTest.testProcessPension_withValidProcessResponse(ProcessPensionServiceImplTest.java:219)
+]]></failure>
+  </testcase>
+  <testcase name="testCheckDetailsForCorrectPensionerInputForSelfPensionType" classname="com.processPension.service.ProcessPensionServiceImplTest" time="0.005">
+    <error message="Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;com.processPension.model.PensionerInput.getName()&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.processPension.model.PensionerInput.getName()" is null
+	at com.processPension.service.ProcessPensionServiceImplTest.testCheckDetailsForCorrectPensionerInputForSelfPensionType(ProcessPensionServiceImplTest.java:62)
+</error>
+  </testcase>
+  <testcase name="testGetPensionDetails" classname="com.processPension.service.ProcessPensionServiceImplTest" time="0.007">
+    <error message="Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;com.processPension.model.PensionerInput.getName()&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.processPension.model.PensionerInput.getName()" is null
+	at com.processPension.service.ProcessPensionServiceImplTest.testGetPensionDetails(ProcessPensionServiceImplTest.java:143)
+</error>
+    <system-out><![CDATA[2022-06-17 11:54:12.019  INFO 4412 --- [           main] c.p.service.ProcessPensionServiceImpl    : Details found by details microservice
+]]></system-out>
+  </testcase>
+</testsuite>

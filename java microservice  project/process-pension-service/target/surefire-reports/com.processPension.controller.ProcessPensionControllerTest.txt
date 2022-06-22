@@ -1,0 +1,52 @@
+-------------------------------------------------------------------------------
+Test set: com.processPension.controller.ProcessPensionControllerTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 11, Errors: 0, Skipped: 0, Time elapsed: 11.009 s <<< FAILURE! - in com.processPension.controller.ProcessPensionControllerTest
+testGlobalExceptions  Time elapsed: 0.316 s  <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$.message"
+	at com.processPension.controller.ProcessPensionControllerTest.testGlobalExceptions(ProcessPensionControllerTest.java:206)
+Caused by: java.lang.IllegalArgumentException: json can not be null or empty
+	at com.processPension.controller.ProcessPensionControllerTest.testGlobalExceptions(ProcessPensionControllerTest.java:206)
+
+testDisbursePension_withInvalidArgument  Time elapsed: 0.028 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<400> but was:<404>
+	at com.processPension.controller.ProcessPensionControllerTest.testDisbursePension_withInvalidArgument(ProcessPensionControllerTest.java:159)
+
+testProcessPension_withInvalidInput  Time elapsed: 0.087 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.processPension.controller.ProcessPensionControllerTest.testProcessPension_withInvalidInput(ProcessPensionControllerTest.java:136)
+
+testGetPensionDetails_withInvalidToken  Time elapsed: 0.07 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<403> but was:<404>
+	at com.processPension.controller.ProcessPensionControllerTest.testGetPensionDetails_withInvalidToken(ProcessPensionControllerTest.java:192)
+
+testDisbursePension_withValidFeignResponse  Time elapsed: 0.07 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<400> but was:<404>
+	at com.processPension.controller.ProcessPensionControllerTest.testDisbursePension_withValidFeignResponse(ProcessPensionControllerTest.java:239)
+
+testProcessPension_withValidInput  Time elapsed: 0.06 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.processPension.controller.ProcessPensionControllerTest.testProcessPension_withValidInput(ProcessPensionControllerTest.java:118)
+
+testPensionInput_withInvalidFeignResponse  Time elapsed: 0.045 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<400> but was:<404>
+	at com.processPension.controller.ProcessPensionControllerTest.testPensionInput_withInvalidFeignResponse(ProcessPensionControllerTest.java:255)
+
+testGetPensionDetails_withValidInput  Time elapsed: 0.063 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.processPension.controller.ProcessPensionControllerTest.testGetPensionDetails_withValidInput(ProcessPensionControllerTest.java:179)
+
+testPensionInput_withEmptyFeignResponse  Time elapsed: 0.032 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<400> but was:<404>
+	at com.processPension.controller.ProcessPensionControllerTest.testPensionInput_withEmptyFeignResponse(ProcessPensionControllerTest.java:270)
+
+testDisbursePension_withInvalidToken  Time elapsed: 0.047 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<403> but was:<404>
+	at com.processPension.controller.ProcessPensionControllerTest.testDisbursePension_withInvalidToken(ProcessPensionControllerTest.java:149)
+
+testPensionInput_withInvalidInput  Time elapsed: 0.044 s  <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$.message"
+	at com.processPension.controller.ProcessPensionControllerTest.testPensionInput_withInvalidInput(ProcessPensionControllerTest.java:222)
+Caused by: java.lang.IllegalArgumentException: json can not be null or empty
+	at com.processPension.controller.ProcessPensionControllerTest.testPensionInput_withInvalidInput(ProcessPensionControllerTest.java:222)
+

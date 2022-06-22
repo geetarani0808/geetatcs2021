@@ -1,0 +1,43 @@
+-------------------------------------------------------------------------------
+Test set: com.processPension.service.ProcessPensionServiceImplTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 3, Errors: 6, Skipped: 0, Time elapsed: 3.591 s <<< FAILURE! - in com.processPension.service.ProcessPensionServiceImplTest
+testGetPensionDetails_forSelf  Time elapsed: 0.059 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.processPension.model.PensionerInput.getName()" is null
+	at com.processPension.service.ProcessPensionServiceImplTest.testGetPensionDetails_forSelf(ProcessPensionServiceImplTest.java:169)
+
+testProcessPension_withInValidProcessResponse  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <21> but was: <0>
+	at com.processPension.service.ProcessPensionServiceImplTest.testProcessPension_withInValidProcessResponse(ProcessPensionServiceImplTest.java:239)
+
+testCheckDetailsForIncorrectPensionerInputForFamily  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.processPension.model.PensionerInput.getName()" is null
+	at com.processPension.service.ProcessPensionServiceImplTest.testCheckDetailsForIncorrectPensionerInputForFamily(ProcessPensionServiceImplTest.java:98)
+
+testCheckDetailsForIncorrectPensionerInputForSelf  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.processPension.model.PensionerInput.getName()" is null
+	at com.processPension.service.ProcessPensionServiceImplTest.testCheckDetailsForIncorrectPensionerInputForSelf(ProcessPensionServiceImplTest.java:87)
+
+testCheckDetailsForCorrectPensionerInputForFamilyPensionType  Time elapsed: 0.009 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.processPension.model.PensionerInput.getName()" is null
+	at com.processPension.service.ProcessPensionServiceImplTest.testCheckDetailsForCorrectPensionerInputForFamilyPensionType(ProcessPensionServiceImplTest.java:76)
+
+testCheckDetails_incorrectPensionerInput  Time elapsed: 0.031 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown ==> expected: <com.processPensionexception.NotFoundException> but was: <java.lang.NullPointerException>
+	at com.processPension.service.ProcessPensionServiceImplTest.testCheckDetails_incorrectPensionerInput(ProcessPensionServiceImplTest.java:195)
+Caused by: java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.processPension.model.PensionerInput.getName()" is null
+	at com.processPension.service.ProcessPensionServiceImplTest.lambda$testCheckDetails_incorrectPensionerInput$0(ProcessPensionServiceImplTest.java:196)
+	at com.processPension.service.ProcessPensionServiceImplTest.testCheckDetails_incorrectPensionerInput(ProcessPensionServiceImplTest.java:195)
+
+testProcessPension_withValidProcessResponse  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <10> but was: <0>
+	at com.processPension.service.ProcessPensionServiceImplTest.testProcessPension_withValidProcessResponse(ProcessPensionServiceImplTest.java:219)
+
+testCheckDetailsForCorrectPensionerInputForSelfPensionType  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.processPension.model.PensionerInput.getName()" is null
+	at com.processPension.service.ProcessPensionServiceImplTest.testCheckDetailsForCorrectPensionerInputForSelfPensionType(ProcessPensionServiceImplTest.java:62)
+
+testGetPensionDetails  Time elapsed: 0.007 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.processPension.model.PensionerInput.getName()" is null
+	at com.processPension.service.ProcessPensionServiceImplTest.testGetPensionDetails(ProcessPensionServiceImplTest.java:143)
+

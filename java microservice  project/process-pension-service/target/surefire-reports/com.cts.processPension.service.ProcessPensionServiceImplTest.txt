@@ -1,0 +1,51 @@
+-------------------------------------------------------------------------------
+Test set: com.cts.processPension.service.ProcessPensionServiceImplTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 3, Errors: 8, Skipped: 0, Time elapsed: 6.548 s <<< FAILURE! - in com.cts.processPension.service.ProcessPensionServiceImplTest
+testGetPensionDetails_forSelf  Time elapsed: 0.008 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.cts.processPension.model.PensionerInput.getName()" is null
+	at com.cts.processPension.service.ProcessPensionServiceImplTest.testGetPensionDetails_forSelf(ProcessPensionServiceImplTest.java:168)
+
+testProcessPension_withInValidProcessResponse  Time elapsed: 0.076 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <21> but was: <0>
+	at com.cts.processPension.service.ProcessPensionServiceImplTest.testProcessPension_withInValidProcessResponse(ProcessPensionServiceImplTest.java:238)
+
+testCheckDetailsForIncorrectPensionerInputForFamily  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.cts.processPension.model.PensionerInput.getName()" is null
+	at com.cts.processPension.service.ProcessPensionServiceImplTest.testCheckDetailsForIncorrectPensionerInputForFamily(ProcessPensionServiceImplTest.java:97)
+
+testGettingPensionDetailByPassingPensionerDetalisForFamilyPensionType  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.cts.processPension.model.PensionerDetail.getPensionType()" is null
+	at com.cts.processPension.service.ProcessPensionServiceImplTest.testGettingPensionDetailByPassingPensionerDetalisForFamilyPensionType(ProcessPensionServiceImplTest.java:118)
+
+testGettingPensionDetailByPassingPensionerDetalisForSelfPensionType  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.cts.processPension.model.PensionerDetail.getPensionType()" is null
+	at com.cts.processPension.service.ProcessPensionServiceImplTest.testGettingPensionDetailByPassingPensionerDetalisForSelfPensionType(ProcessPensionServiceImplTest.java:107)
+
+testCheckDetailsForIncorrectPensionerInputForSelf  Time elapsed: 0.024 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.cts.processPension.model.PensionerInput.getName()" is null
+	at com.cts.processPension.service.ProcessPensionServiceImplTest.testCheckDetailsForIncorrectPensionerInputForSelf(ProcessPensionServiceImplTest.java:86)
+
+testCheckDetailsForCorrectPensionerInputForFamilyPensionType  Time elapsed: 0.01 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.cts.processPension.model.PensionerInput.getName()" is null
+	at com.cts.processPension.service.ProcessPensionServiceImplTest.testCheckDetailsForCorrectPensionerInputForFamilyPensionType(ProcessPensionServiceImplTest.java:75)
+
+testCheckDetails_incorrectPensionerInput  Time elapsed: 0.027 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown ==> expected: <com.cts.processPension.exception.NotFoundException> but was: <java.lang.NullPointerException>
+	at com.cts.processPension.service.ProcessPensionServiceImplTest.testCheckDetails_incorrectPensionerInput(ProcessPensionServiceImplTest.java:194)
+Caused by: java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.cts.processPension.model.PensionerInput.getName()" is null
+	at com.cts.processPension.service.ProcessPensionServiceImplTest.lambda$testCheckDetails_incorrectPensionerInput$0(ProcessPensionServiceImplTest.java:195)
+	at com.cts.processPension.service.ProcessPensionServiceImplTest.testCheckDetails_incorrectPensionerInput(ProcessPensionServiceImplTest.java:194)
+
+testProcessPension_withValidProcessResponse  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <10> but was: <0>
+	at com.cts.processPension.service.ProcessPensionServiceImplTest.testProcessPension_withValidProcessResponse(ProcessPensionServiceImplTest.java:218)
+
+testCheckDetailsForCorrectPensionerInputForSelfPensionType  Time elapsed: 0.049 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.cts.processPension.model.PensionerInput.getName()" is null
+	at com.cts.processPension.service.ProcessPensionServiceImplTest.testCheckDetailsForCorrectPensionerInputForSelfPensionType(ProcessPensionServiceImplTest.java:61)
+
+testGetPensionDetails  Time elapsed: 0.008 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.cts.processPension.model.PensionerInput.getName()" is null
+	at com.cts.processPension.service.ProcessPensionServiceImplTest.testGetPensionDetails(ProcessPensionServiceImplTest.java:142)
+

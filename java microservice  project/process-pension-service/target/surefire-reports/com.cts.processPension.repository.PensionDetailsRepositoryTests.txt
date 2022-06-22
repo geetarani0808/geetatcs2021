@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.cts.processPension.repository.PensionDetailsRepositoryTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.843 s <<< FAILURE! - in com.cts.processPension.repository.PensionDetailsRepositoryTests
+testSaveForPensionerDetails  Time elapsed: 0.164 s  <<< ERROR!
+org.springframework.orm.jpa.JpaSystemException: ids for this class must be manually assigned before calling save(): com.cts.processPension.model.PensionerInput; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.cts.processPension.model.PensionerInput
+	at com.cts.processPension.repository.PensionDetailsRepositoryTests.testSaveForPensionerDetails(PensionDetailsRepositoryTests.java:68)
+Caused by: org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.cts.processPension.model.PensionerInput
+	at com.cts.processPension.repository.PensionDetailsRepositoryTests.testSaveForPensionerDetails(PensionDetailsRepositoryTests.java:68)
+
